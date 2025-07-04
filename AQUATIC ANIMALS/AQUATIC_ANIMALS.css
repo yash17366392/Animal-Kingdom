@@ -1,0 +1,89 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    background: linear-gradient(to right, #ccefff, #e6f7ff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #00334d;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #005b99;
+    text-shadow: 2px 2px #b3e0ff;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #007acc;
+    margin: 30px 0 10px;
+}
+
+h3 {
+    text-align: center;
+    color: #0099cc;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #66d9ff;
+    padding-bottom: 4px;
+}
+
+/* Paragraphs */
+p {
+    text-align: center;
+    margin-top: 10px;
+    color: #004466;
+}
+
+/* Navigation */
+nav {
+    margin: 15px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+nav a {
+    color: #005b99;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #0099cc;
+    color: #fff;
+}
+
+/* Sections */
+section {
+    margin-bottom: 60px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    padding: 15px;
+    vertical-align: top;
+}

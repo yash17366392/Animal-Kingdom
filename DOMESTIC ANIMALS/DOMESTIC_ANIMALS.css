@@ -1,0 +1,153 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background: linear-gradient(to right, #f2ffe6, #e6ffe6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2e5d00;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #558000;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #c6f2a7;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #336600;
+    margin: 30px 0 15px;
+}
+
+h3 {
+    text-align: center;
+    color: #4d9900;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #a3d977;
+    padding-bottom: 4px;
+}
+
+/* Paragraphs */
+p {
+    text-align: center;
+    color: #355e00;
+    margin-top: 8px;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #558000;
+    margin: 10px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #99cc33;
+    color: #fff;
+}
+
+/* Section Cards */
+section {
+    margin-bottom: 60px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    padding: 15px;
+    vertical-align: top;
+}
+
+/* Media Elements */
+iframe,
+video,
+audio {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #c8e6a0;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #2e5d00;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    display: inline-block;
+    background-color: #99cc33;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s;
+}
+
+footer a:hover {
+    background-color: #558000;
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    iframe,
+    video {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 5px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+

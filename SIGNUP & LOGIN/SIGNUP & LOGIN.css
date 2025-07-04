@@ -1,0 +1,197 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #fff3e0, #ffe0b2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4e342e;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ef6c00;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #ffa726;
+}
+
+/* Main Form Styling */
+main {
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections and Articles */
+section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #ef6c00;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffb74d;
+    padding-bottom: 5px;
+}
+
+article {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #5d4037;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    border: 2px solid #ffcc80;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fffaf5;
+    width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #ef6c00;
+    outline: none;
+    background-color: #fff3e0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Checkbox & Radio */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Preferences List */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #ef6c00;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    width: 100%;
+    max-width: 300px;
+    align-self: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #d84315;
+    transform: scale(1.03);
+}
+
+/* Links */
+a {
+    color: #ef6c00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #bf360c;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 30px 20px;
+    background-color: #4e342e;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+footer a {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 25px;
+    background-color: #ef6c00;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+footer a:hover {
+    background-color: #d84315;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    label,
+    input,
+    select,
+    textarea {
+        font-size: 1rem;
+    }
+}

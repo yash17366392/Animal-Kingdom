@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="SIGNUP & LOGIN.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            LOGIN PAGE
+        </h1>
+    </header>
+
+    <main style="margin-bottom: 80px;">
+        <section>
+            <article>
+                <h3>USER NAME</h3>
+                <label for="Username">Enter your Username</label>
+                <input type="text" name="Username" id="Username" placeholder="EX:- The_Infinitium">
+            </article>
+            <article>
+                <h3>PASSWORD</h3>
+                <label for="Password">Confirm Password</label>
+                <input type="password" name="Password" id="Password" placeholder="EX:- ABC123">
+            </article>
+            <article>
+                <h3></h3>
+                <label for="submit">SUBMIT THE SIGN UP FORM HERE:-</label>
+                <input type="submit" name="submit" id="submit">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div style="margin-bottom: 1000px; text-align: center; font-size: 30px;">
+            <a href="http://127.0.0.1:3000/HOME/HOME.HTML">Go to Home Page</a>
+        </div>
+
+        <p style="text-align: center;">
+            &copy; 2025 The Infinitium. All rights reserved.<br>
+            Contact us: support@infinitium.com<br>
+            Home | About | Privacy Policy | Terms of Service
+        </p>
+
+    </footer>
+    <script>
+        document.getElementById("submit").addEventListener("click", function () {
+            const enteredUsername = document.getElementById("Username").value.trim();
+            const enteredPassword = document.getElementById("Password").value.trim();
+
+            const storedUsername = localStorage.getItem("infinitiumUsername");
+            const storedPassword = localStorage.getItem("infinitiumPassword");
+
+            if (enteredUsername === "" || enteredPassword === "") {
+                alert("Please enter both username and password.");
+                return;
+            }
+
+            if (enteredUsername === storedUsername && enteredPassword === storedPassword) {
+                alert("Login successful! Redirecting to home page...");
+                window.location.href = "http://127.0.0.1:3000/HOME/HOME.HTML"; // Update if needed
+            } else {
+                alert("Incorrect username or password. Please try again.");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'SIGN UP'</title>
+    <link rel="stylesheet" href="SIGNUP & LOGIN.css">
+</head>
+
+<body>
+    <header>
+        <h1>SIGN UP PAGE</h1>
+    </header>
+    <main>
+        <form action="post"></form>
+
+        <section id="name">
+            <h3>NAME :-</h3>
+            <article>
+                <label for="F.N">Enter your first name:-</label>
+                <input type="text" name="F.N" id="F.N" placeholder="EX:-YASWANTH">
+            </article>
+
+            <article>
+                <label for="L.N">Enter your last name:-</label>
+                <input type="text" name="L.N" id="L.N" placeholder="EX:-PANDIRIPALLI">
+            </article>
+        </section>
+
+        <section id="Gender">
+            <h3>GENDER & DOB :-</h3>
+            <article>
+                <label for="Gender">Select your Gender:-</label>
+                <input type="radio" name="Gender" id="Male" value="male">
+                <label for="Male">Male</label>
+                <input type="radio" name="Gender" id="Female" value="female">
+                <label for="Female">Female</label>
+            </article>
+
+            <article>
+                <label for="DOB">Enter your Date of Birth:-</label>
+                <input type="date" name="DOB" id="DOB">
+            </article>
+        </section>
+
+        <section id="Contact Details">
+            <h3>CONTACT DETAILS :-</h3>
+            <article>
+                <label for="Contact">Enter your Contact Number:-</label>
+                <input type="number" name="Contact" id="Contact" min="6000000000" max="999999999"
+                    placeholder="9392624071">
+            </article>
+
+            <article>
+                <label for="Gmail">Enter your Gmail Address:-</label>
+                <input type="email" name="Gmail" id="Gmail" placeholder="EX:- yash@gmail.com">
+            </article>
+
+            <article>
+                <label for="State">Enter your State</label>
+                <select name="State" id="State">
+                    <option value="TELANGANA">TELANGANA</option>
+                    <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                    <option value="KARNATAKA">KARNATAKA</option>
+                    <option value="MAHARASHTRA">MAHARASHTRA</option>
+                    <option value="TAMILNADU">TAMILNADU</option>
+                </select>
+            </article>
+
+            <article>
+                <label for="City">Enter your City</label>
+                <select name="City" id="City">
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Vishakapatnam">Vishakapatnam</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Chennai">Chennai</option>
+                </select>
+            </article>
+
+            <article>
+                <label for="Pincode">Enter your Pincode</label>
+                <input type="number" name="Pincode" id="Pincode" min="110001" max="999999" placeholder="Ex:-532221">
+            </article>
+
+            <article>
+                <label for="Address">Enter your Address:-</label><br>
+                <textarea name="Address" id="Address" cols="20" rows="5"
+                    placeholder="door no               street              landmark              post                  district"></textarea>
+            </article>
+        </section>
+
+        <section id="User Choices">
+            <h3>USER CHOICES :-</h3>
+            <article>
+                <label for="Username">Enter your Username</label>
+                <input type="text" name="Username" id="Username" placeholder="EX:- The_Infinitium">
+            </article>
+
+            <article>
+                <label for="Password">Enter Password</label>
+                <input type="password" name="Password" id="Password" placeholder="EX:- ABC123">
+            </article>
+
+            <article>
+                <label for="Password">Confirm Password</label>
+                <input type="password" name="Password" id="Password" placeholder="EX:- ABC123">
+            </article>
+
+            <article>
+                <label for="Preference">Select your catogory Preferences:-</label>
+                <ul style="margin-top:3px;">
+                    <li>
+                        <input type="checkbox" name="Preference" id="WILD ANIMALS" value="WILD ANIMALS">
+                        <label for="WILD ANIMALS">WILD ANIMALS</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Preference" id="DOMESTIC ANIMALS" value="">
+                        <label for="DOMESTIC ANIMALS">DOMESTIC ANIMALS</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Preference" id="AQUATIC ANIMALS" value="AQUATIC ANIMALS">
+                        <label for="AQUATIC ANIMALS">AQUATIC ANIMALS</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Preference" id="LEGENDARY ANIMALS" value="LEGENDARY ANIMALS">
+                        <label for="LEGENDARY ANIMALS">LEGENDARY ANIMALS</label>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <label for="submit">SUBMIT THE SIGN UP FORM HERE:-</label>
+            <input type="submit" name="submit" id="submit">
+        </div>
+
+        <a href="http://127.0.0.1:3000/SIGNUP & LOGIN/LOGIN.HTML">GO TO LOGIN PAGE</a>
+
+        <div>
+            <a href="#">
+                <h3 style="margin-top: 3px;">BACK TO TOP</h3>
+            </a>
+        </div>
+
+        <p>
+            &copy; 2025 The Infinitium. All rights reserved.<br>
+            Contact us: support@infinitium.com<br>
+            Home | About | Privacy Policy | Terms of Service
+        </p>
+    </footer>
+    <script>
+        document.getElementById("submit").addEventListener("click", function () {
+            const username = document.getElementById("Username").value.trim();
+            const password = document.getElementById("Password").value.trim();
+
+            if (username === "" || password === "") {
+                alert("Please fill in both username and password.");
+                return;
+            }
+
+            // Save to localStorage
+            localStorage.setItem("infinitiumUsername", username);
+            localStorage.setItem("infinitiumPassword", password);
+
+            alert("Sign up successful! Redirecting to Login page...");
+            window.location.href = "LOGIN.HTML"; // Update to correct path if needed
+        });
+    </script>
+
+</body>
+
+</html>

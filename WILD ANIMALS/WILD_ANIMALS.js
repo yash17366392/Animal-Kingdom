@@ -1,0 +1,1 @@
+alert("WELCOME TO THE LAND OF WILD !!!")
